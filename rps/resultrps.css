@@ -1,0 +1,47 @@
+@media only screen and (max-width: 1245px){
+	.h1-2-1 ul{
+		width: 90%;
+	}
+}
+@media only screen and (max-width: 850px){
+	.h1-2-1{
+		display: none;
+	}
+	.h1-2-2{
+		width: 100%;
+		justify-content: flex-end;
+	}
+	.h1-2-2-2{
+		display: block;
+	}
+	.h1-1, .h1-2{
+		width: 50%;
+	}
+}
+@media only screen and (max-width: 800px){
+	.footer{
+		padding: 50px 5%;
+	}
+	.f2{
+		margin: 15px;
+	}
+	.main{
+		padding: 0 15%;
+	}
+}
+@media only screen and (max-width: 660px){
+	.footer{
+		padding: 50px 0;
+	}
+	.f2{
+		margin: 0;
+	}
+	.f3{
+		padding: 0 5%;
+	}
+}
+@media only screen and (max-width: 600px){
+	.main{
+		padding: 0 5%;
+	}
+}

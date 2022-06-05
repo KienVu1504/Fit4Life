@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Fit4Life</title>
+	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.3/css/all.css">
+	<link rel="stylesheet" type="text/css" href="../css/home.css">
+	<link rel="stylesheet" type="text/css" href="../rps/homerps.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<meta charset="utf-8">
+</head>
+<body onload='display_ct6();'>
+	<header>
+		<div class="h1" id="h1id">
+			<div class="h1-1">
+				<a href="home.html"><img src="../images/logo.png"></a>
+			</div>
+			<div class="h1-2">
+				<div class="h1-2-1">
+				 	<ul>
+				 		<a href="home.html"><li>Home</li></a>
+				 		<a href="dietplan.html"><li>Diet Plan</li></a>
+				 		<a href="workout.html"><li>Workout Plan</li></a>
+				 	</ul>
+				</div>
+				<div class="h1-2-2">
+				 	<div class="h1-2-2-2" id="h1-2-2-2id">
+					 	<i class="fas fa-bars"></i>
+					</div>
+					<div class="dropdownmenu" id="dropdownmenuid">
+						<ul>
+							<a href="home.html"><li>Home</li></a>
+							<a href="dietplan.html"><li>Diet Plan</li></a>
+							<a href="workout.html"><li>Workout Plan</li></a>
+						</ul>
+					</div>
+				 	<div class="h1-2-2-1" id="show">
+				 		Welcome: 
+				 	</div>
+				 	<a href="../index.html" id="img"></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section>
+		<div class="main">
+			<div class="m1">
+				<div class="m1-1">
+					<h1>Calculate the BMI - Body mass index</h1>
+					<p>Use this tool to check your body mass index (BMI) to see if you are at a normal weight. You can also check your child's BMI here.</p>
+				</div>
+				<div class="m1-2">
+					<img src="../images/can.svg">
+				</div>
+			</div>
+			<div class="m2">
+				<div class="m2-1">
+					<form method="get" id="MyForm">
+						<b><p>Your Gender</p></b>
+						<section class="m2-1-s1">
+							<label class="container">
+								<img src="../images/maleIcon.svg">
+								<input type="radio" value="male" name="gender">
+								<span class="checkmark"></span>
+							</label>
+							<label class="container">
+								<img src="../images/femaleIcon.svg">
+								<input type="radio" value="female" name="gender" required="">
+								<span class="checkmark"></span>
+							</label>
+						</section>
+						<div class="m2-1-1">
+							<input type="number" name="age" required="" min="2" max="110" autocomplete="off">
+							<span></span>
+							<label>How old are you?</label>
+						</div>
+						<div class="m2-1-1">
+							<input type="number" name="height" step="0.1" required="" id="height" min="0" max="300">
+							<span></span>
+							<label>Your Height? (cm)</label>
+						</div>
+						<div class="m2-1-1">
+							<input type="number" name="weight" step="0.1" required="" id="weight" min="3" max="500">
+							<span></span>
+							<label>Your Weight? (kg)</label>
+						</div>
+						<div class="m2-1-2">
+							<input type="submit" value="Continue">
+						</div>
+					</form>
+				</div>
+				<m>
+			</div>
+			<div class="m3">
+				<div class="m3-1">
+					<b><i class="fas fa-info-circle"></i><b>Information</b></b>
+				</div>
+				<div class="m3-2">
+					<div class="m3-2-1" onclick="showtext()">
+						<b>What is Body Mass Index (BMI)? - BMI definition</b>
+						<i class="fas fa-plus" id="fas"></i>
+						<i class="fas fa-minus" id="fasid"></i>
+					</div>
+					<div class="m3-2-2" id="m3-2-2id">
+						<p>Body mass index (BMI) is a measure of a person's weight relative to his or her height. A high BMI can indicate a high degree of obesity or overweight. BMI can be a screening tool but is not intended to diagnose obesity or personal health. To determine if BMI has a potential health risk, your doctor or health professional will need to perform additional assessments such as skin fold thickness measurement, dietary evaluation. , physical activity and family history.</p>
+					</div>
+					<div class="m3-2-1" onclick="showtext1()">
+						<b>Interpret BMI</b>
+						<i class="fas fa-plus" id="fas1"></i>
+						<i class="fas fa-minus" id="fasid1"></i>
+					</div>
+					<div class="m3-2-2"  id="m3-2-2id1">
+						<p>For adults 20 years of age and older, BMI is calculated using standard weight status categories. These standards are the same for men and women of all fitness and age groups. For children and adolescents, BMI distinguishes between age and sex and is commonly referred to as BMI by age. In children, high levels of body fat can lead to weight-related ailments and other health problems. Being underweight can also increase your risk of certain health conditions and medical conditions. A high BMI often indicates overweight. This index does not directly measure body fat but is correlated with direct measurements of body fat (1,2,3).</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<div class="loader-wrapper">
+	    <img src="../images/loading.gif">
+	</div>
+	<button class="scrollToTopBtn">
+		<i class="fas fa-arrow-up"></i>
+	</button>
+	<footer>
+		<div class="footer">
+			<div class="f1">
+				<center><a href=""><img src="../images/logo.png"></a></center>
+			</div>
+			<div class="f2">
+				<div class="f2-1">
+					<div class="f2-1-1">
+						<a href="dietplan.html">Diet Topics</a>
+					</div>
+					<div class="f2-1-1">
+						<a href="workout.html">Workout Topics</a>
+					</div>
+					<div class="f2-1-1">
+						<a href="home.html">BMI Check</a>
+					</div>
+				</div>
+				<div class="f2-1">
+					<div class="f2-1-1">
+						<a href="infor.html">Information</a>
+					</div>
+					<div class="f2-1-1">
+						<a href="policy.html">Policy</a>
+					</div>
+					<div class="f2-1-1">
+						<a href="asked.html">Frequently Asked Questions</a>
+					</div>
+				</div>
+				<div class="f2-1">
+					<div class="f2-1-1">
+						<a href="intro.html">Self-introduce</a>
+					</div>
+					<div class="f2-1-1">
+						<a href="ads.html">Advertisement</a>
+					</div>
+					<div class="f2-1-1">
+						<a href="contact.html">Contact</a>
+					</div>
+				</div>
+			</div>
+			<hr>
+			<div class="f3">
+				Copyright © 2021 KVDigital. The articles by Dark Code and Fit4Life are for reference only, and are not a substitute for medical diagnosis or treatment.
+			</div>
+			<div class="colorblock">
+				<center>
+					<p id="ct6"></p>
+					<p id="CounterVisitor"></p>
+				</center>
+			</div>
+		</div>
+	</footer>
+	<script src="../js/home.js?v=2"></script>
+	<script type="text/javascript" src="../js/data.js?v=1"></script>
+</body>
+</html>
