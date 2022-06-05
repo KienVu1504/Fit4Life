@@ -142,11 +142,14 @@ img{
 }
 /*fixed header*/
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+  }
+  .section_move{
+	  margin-top: 100px;
+  }
 /*main*/
 .m3{
 	padding: 0 30%;
@@ -171,20 +174,20 @@ img{
 .m3-2-2{
 	color: grey;
 	transition: opacity 0.5s, height 0.5s;
-	opacity: 0;
+	/* opacity: 0; */
 	height: 0;
 	overflow: hidden;
 }
 .m3-2-2show{
 	transition: opacity 0.5s, height 0.5s ;
-	opacity: 1;
-	height: 280px;
+	/* opacity: 1; */
+	height: auto;
 	overflow: hidden;
 }
 .m3-2-2show1{
 	transition: opacity 0.5s, height 0.5s ;
-	opacity: 1;
-	height: 380px;
+	/* opacity: 1; */
+	height: auto;
 	overflow: hidden;
 }
 .fa-plushide{

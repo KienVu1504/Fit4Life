@@ -15,12 +15,15 @@ $('#show').html('Welcome: ' + username);
 
 window.onscroll = function() {myFunction()};
 var header = document.getElementById("h1id");
+var section = document.getElementById("mainid");
 var sticky = header.offsetTop;
 function myFunction() {
 if (window.pageYOffset > sticky) {
 		header.classList.add("sticky");
+		section.classList.add("section_move");
 	} else {
 		header.classList.remove("sticky");
+		section.classList.remove("section_move");
 	}
 }
 gender = localStorage.getItem('gender')

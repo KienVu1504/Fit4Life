@@ -141,11 +141,14 @@ img{
 }
 /*fixed header*/
 .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-}
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+  }
+  .section_move{
+	  margin-top: 100px;
+  }
 /*main*/
 .main{
 	padding: 0 20%

@@ -147,6 +147,9 @@ img{
   width: 100%;
   z-index: 1000;
 }
+.section_move{
+	margin-top: 100px;
+}
 /*main*/
 .main{
 	width: 100%;
@@ -158,7 +161,7 @@ img{
 	position: relative;
 	display: flex;
 	height: 300px;
-	background-image: url(../images/banner.png);
+	background-image: url(https://bn02pap001files.storage.live.com/y4mLBHcKxJSh82BQgxNWu6cFoiCyiAIKaeRkbbDnmEuF6LhD8xBN_J0GECsxylbU2Wg-L-9GhAMh6sxQzU61Oy_U1d94UL8TXL5pxmWELIRNeFGvLdUKWjk2tt_I3Hao2lgdixJLZenyahpVe-M7w1NPE6PtJeJTwIF8JO-G-muHXeFJo2QrOhLZ-5GbWGz3NEH?width=1311&height=389&cropmode=none);
 	background-size: cover; 
 }
 .m1-1{
@@ -322,20 +325,20 @@ img{
 .m3-2-2{
 	color: grey;
 	transition: opacity 0.5s, height 0.5s;
-	opacity: 0;
+	/* opacity: 0; */
 	height: 0;
 	overflow: hidden;
 }
 .m3-2-2show{
 	transition: opacity 0.5s, height 0.5s ;
-	opacity: 1;
-	height: 200px;
+	/* opacity: 1; */
+	height: auto;
 	overflow: hidden;
 }
 .m3-2-2show1{
 	transition: opacity 0.5s, height 0.5s ;
-	opacity: 1;
-	height: 250px;
+	/* opacity: 1; */
+	height: auto;
 	overflow: hidden;
 }
 .fa-plushide{
